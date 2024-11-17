@@ -37,14 +37,14 @@ fun BusinessCard() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF121212)) // Off-black background color
+            .background(Color(0xFF121212))
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         // Logo Image
         Image(
-            painter = painterResource(id = R.drawable.android_logo), // Replace with your monochrome logo
+            painter = painterResource(id = R.drawable.android_logo),
             contentDescription = "Android Logo",
             modifier = Modifier
                 .size(100.dp)
@@ -57,7 +57,7 @@ fun BusinessCard() {
             style = TextStyle(
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White // White font for contrast
+                color = Color.White
             )
         )
 
@@ -67,7 +67,7 @@ fun BusinessCard() {
             style = TextStyle(
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Medium,
-                color = Color(0xFFB0B0B0) // Light gray for a softer effect
+                color = Color(0xFFB0B0B0)
             )
         )
 
@@ -92,7 +92,7 @@ fun ContactInfo(text: String) {
             style = TextStyle(
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Normal,
-                color = Color(0xFFB0B0B0) // Light gray font for a minimalist touch
+                color = Color(0xFFB0B0B0)
             )
         )
     }
